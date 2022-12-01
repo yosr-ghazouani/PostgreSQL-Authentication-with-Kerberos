@@ -6,7 +6,7 @@ GSSAPI is an industry-standard protocol for secure authentication defined in RFC
 
 Kerberos is a network *authentication protocol* used to verify the identity of two or more *trusted hosts* across an *untrusted network*. It uses *secret-key cryptography* and a *trusted third party* (Kerberos Key Distribution Center) for authenticating client-server applications. Key Distribution Cente (KDC) gives clients tickets representing their network credentials. The Kerberos ticket is presented to the servers after the connection has been established.
 
-![How does Kerberos work ?](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kerberos-simple.svg/645px-Kerberos-simple.svg.png)
+![How does Kerberos work ?](https://www.datasunrise.com/wp-content/uploads/2016/11/Kerberos.png)
 
 
 *Note: Since Kerberos protocol has a timestamp involved, all three machines clocks need to be synchronized.*
@@ -28,15 +28,16 @@ Virtual machines have a NAT adapter. This is my network configuration
 Now we wil define the hostname for each machine :
 
 * KDC machine       
-      `hostnamectl set-hostname kdc.tekup.com`
+      `hostnamectl set-hostname kdc.tekup.com`  <br>
 ![Change KDC machine hostname](/projet_kerberos/kdc/1.PNG)
   
 * Postgres machine        
-      `hostnamectl set-hostname pg.tekup.com`
+      `hostnamectl set-hostname pg.tekup.com`  <br>
 ![Change Postgres machine hostname](/projet_kerberos/pg/1.PNG)
   
 * Client machine      
-      `hostnamectl set-hostname client.tekup.com
+      `hostnamectl set-hostname client.tekup.com`
+      <br>
 ![Change Client machine hostname](/projet_kerberos/client/1.PNG)
  
 
